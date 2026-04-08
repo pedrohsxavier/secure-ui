@@ -24,7 +24,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
     color: white;
     border-radius: 20px;
-    padding: 30px 40px;
+    padding: 30px 40px 45px 40px;
 }
 
 .wrapper h1 {
@@ -49,7 +49,7 @@ body {
     border-radius: 40px;
     font-size: 16px;
     color: #ffffff;
-    padding: 20px 45px 20px 20px;
+    padding: 20px 30px 20px 20px;
 }
 
 .input-box input::placeholder {
@@ -95,8 +95,13 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
     cursor: pointer;
     font-size: 16px;
-    color: #262626;
+    color: #222222;
     font-weight: 500;
+    transition: transform 0.3s ease;
+}
+
+.wrapper .btn:hover {
+    transform: scale(1.02);
 }
 
 .wrapper .register-link {
@@ -113,4 +118,31 @@ body {
 
 .wrapper .register-link p a:hover {
     text-decoration: underline;
+}
+
+.social-icons {
+    padding-top: 20px;
+    text-align: center;
+    justify-content: space-evenly;
+    display: flex;
+    font-size: 20px;
+}
+
+.social-icons a {
+    color: #ffffff;
+}
+
+.social-icons i {
+    padding: 10px;
+    border: 0.1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15%;
+    cursor: pointer;
+    size: 14em;
+    transition: transform 0.3s ease;
+}
+
+.social-icons i:hover {
+    color: #a339a1;
+    transform: scale(1.15);
+    background: #ffffff;
 }
