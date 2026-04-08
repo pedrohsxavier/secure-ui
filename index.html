@@ -10,18 +10,20 @@
 
 <body>
     <div class="wrapper">
-        <form action="">
+        <form id="loginForm">
             <h1>Login</h1>
             <div class="input-box">
-                <input type="text" placeholder="Username" required>
+                <input type="text" id="username" name="username" placeholder="Username" aria-label="Username" required>
                 <i class='bx bxs-user'></i>
             </div>
             <div class="input-box">
-                <input type="password" placeholder="Password" required>
+                <input type="password" id="password" name="password" placeholder="Password" aria-label="Password" autocomplete="current-password" required>
                 <i class='bx bxs-lock-alt'></i>
             </div>
             <div class="remember-forgot">
-                <label><input type="checkbox" name="" id="">Remember me</label>
+                <label>
+                    <input type="checkbox" id="remember" name="remember">Remember me
+                </label>
                 <a href="#">Forgot password?</a>
             </div>
 
@@ -32,16 +34,16 @@
             </div>
 
             <div class="social-icons">
-                <a href="#">
+                <a href="#" aria-label="Login with Google">
                     <i class='bx bxl-google'></i>
                 </a>
-                <a href="#">
+                <a href="#" aria-label="Login with Facebook">
                     <i class='bx bxl-facebook'></i>
                 </a>
-                <a href="#">
+                <a href="#" aria-label="Login with LinkedIn">
                     <i class='bx bxl-linkedin'></i>
                 </a>
-                <a href="#">
+                <a href="#" aria-label="Login with GitHub">
                     <i class='bx bxl-github'></i>
                 </a>
             </div>
