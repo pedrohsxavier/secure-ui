@@ -3,18 +3,16 @@ const Auth = {
         return JSON.parse(localStorage.getItem('auth'));
     },
 
-    isLogged() {
-        const auth = this.get();
-        return auth && auth.logged === true;
+    login(data) {
+        localStorage.setItem('auth', JSON.stringify(data));
     },
 
-    login(username) {
-        const auth = {
-            username,
-            logged: true
-        };
+    getToken() {
+        return this.get()?.token;
+    },
 
-        localStorage.setItem('auth', JSON.stringify(auth));
+    isLogged() {
+        return !!this.get()?.token;
     },
 
     logout() {
